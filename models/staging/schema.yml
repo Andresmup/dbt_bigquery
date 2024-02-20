@@ -1,0 +1,16 @@
+version: 2
+
+sources:
+  - name: staging
+    database: dataengineeringcourse-0001
+     # For postgres:
+      #database: production
+    schema: NYC_TLC_Data
+
+      # loaded_at_field: record_loaded_at
+    tables:
+      - name: green_tripdata
+      - name: yellow_tripdata
+         # freshness:
+           # error_after: {count: 6, period: hour}
+
