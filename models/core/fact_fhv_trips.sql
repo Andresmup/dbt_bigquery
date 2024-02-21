@@ -27,3 +27,5 @@ inner join dim_zones as pickup_zone
 on fhv_tripdata.pickup_locationid = pickup_zone.locationid
 inner join dim_zones as dropoff_zone
 on fhv_tripdata.dropoff_locationid = dropoff_zone.locationid
+where
+    pickup_zone.borough != 'Unknown' and dropoff_zone.borough != 'Unknown'
