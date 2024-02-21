@@ -68,7 +68,7 @@ models:
 
       - name: passenger_count
         data_type: int64
-        description: ""
+        description: "Number of passenger in the trip"
 
       - name: trip_distance
         data_type: numeric
