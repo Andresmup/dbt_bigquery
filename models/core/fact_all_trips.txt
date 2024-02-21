@@ -1,3 +1,4 @@
+/*
 {{
     config(
         materialized='table'
@@ -33,7 +34,9 @@ select trips_unioned.tripid,
     trips_unioned.vendorid, 
     trips_unioned.service_type,
     trips_unioned.ratecodeid, 
-    trips_unioned.pickup_locationid, 
+    trips_unioned.pickup_locationid,
+    trips_unioned.dispatching_base_num,
+    trips_unioned.affiliated_base_number, 
     pickup_zone.borough as pickup_borough, 
     pickup_zone.zone as pickup_zone, 
     trips_unioned.dropoff_locationid,
@@ -62,3 +65,5 @@ inner join dim_zones as dropoff_zone
 on trips_unioned.dropoff_locationid = dropoff_zone.locationid
 where
     pickup_zone.borough != 'Unknown' and dropoff_zone.borough != 'Unknown'
+
+*/
