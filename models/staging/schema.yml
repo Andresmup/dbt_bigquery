@@ -72,7 +72,7 @@ models:
 
       - name: trip_distance
         data_type: numeric
-        description: ""
+        description: "Distance done in the trip"
 
       - name: trip_type
         data_type: int64
