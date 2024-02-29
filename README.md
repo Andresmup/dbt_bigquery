@@ -17,6 +17,11 @@ dbt run # Runs the models you defined in the project
 dbt build # Builds and tests the selected resources such as models, seeds, snapshots, and tests
 dbt test # Executes the tests defined for the project
 ```
+
+## Project Code
+In the folders my_files and models you can find the SQL queries.
+
+
 ## Resources:
 - Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
 
